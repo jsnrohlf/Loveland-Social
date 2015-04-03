@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Profile</title>
+  <link rel="stylesheet" href="profile.css">
+  <script src="profile.js"></script>
+  <script src="jquerry.js"></script>
+  <script src="http://documentcloud.github.io/underscore/underscore-min.js"></script>
+  <script src="http://documentcloud.github.io/backbone/backbone-min.js"></script>
+</head>
+
+<body>
+    <div id="profile">
+      <h2>Add a New Profile</h2>
+      <form id="myForm">
+        <div class="form-row">
+          <label for="author">Full Name:</label>
+          <input type="text" name="name" placeholder="Bill Joy">
+        </div>
+
+        <div class="form-row">
+          <label for="avatar_field">Picture:</label>
+          <input type="file" name="pic" accept="image/*">
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input type="text" name="email" placeholder="me@email.com">
+        </div>
+
+        <div class="form-row">
+          <label for="twitter">Twitter:</label>
+          <input type="text" name="twitter" placeholder="@lovelandcreatives">
+        </div>
+
+        <div class="form-list">
+          <label for="interests">Interests (select 3):</label><br>
+          <br>
+          <input type="checkbox" name="creative" value="painter">Painter<br>
+          <input type="checkbox" name="creative" value="sculpture">Sculpture<br>
+          <input type="checkbox" name="creative" value="fiber_artist">Fiber Artist<br>
+          <input type="checkbox" name="creative" value="digital_artist">Digital Artist<br>
+          <input type="checkbox" name="creative" value="developer">Web Developer<br>
+          <input type="checkbox" name="creative" value="entrepreneur">Entrepreneur<br>
+          <input type="checkbox" name="creative" value="writer">Writer<br>
+          <input type="checkbox" name="creative" value="poet">Poet<br>
+          <input type="checkbox" name="creative" value="philosopher">Philosopher<br>
+          <input type="checkbox" name="creative" value="designer">Designer<br>
+          <input type="checkbox" name="creative" value="engineer">Engineer<br>
+          <input type="checkbox" name="creative" value="photographer">Photographer<br>
+          <input type="checkbox" name="creative" value="videographer">Videographer<br>
+        </div>
+
+        <div class="form-row">
+          <label for="bio">Short bio:</label>
+          <textarea name="bio" rows="7"></textarea>
+        </div>
+
+        <div class="form-row">
+          <label></label>
+          <button type="submit">Submit</button>
+          <button type="clear">Clear</button>
+        </div>
+      </form>
+    </div>
+
+
+</body>
+
+</html>
